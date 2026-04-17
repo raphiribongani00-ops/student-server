@@ -69,7 +69,7 @@ async function submitMissingReport() {
     }
 
     try {
-        const response = await fetch('http://localhost:3000/api/report-missing', {
+        const response = await fetch('http://https://student-server.onrender.com/api/report-missing', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ Item_Type: type, Email: email, ...extraData })
