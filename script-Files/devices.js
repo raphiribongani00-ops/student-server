@@ -42,7 +42,7 @@ async function addDevice() {
     submitButton.textContent = 'Submitting...';
 
     try {
-        const response = await fetch('http://localhost:3000/api/save-device', {
+        const response = await fetch('http://https://student-server.onrender.com/api/save-device', {
             method: 'POST',
             body: formData
         });
